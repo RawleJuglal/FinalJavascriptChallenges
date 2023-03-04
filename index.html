@@ -18,7 +18,7 @@
             built in string methods.</h2>
             <form id="panic-form" class="--panic-form challenge-form">
               <input type="text" id="panic-input" class="--panic-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
-              <button id="panic-btn" class="--panic-btn challenge-btn rounded-border primary-font semi-bold" data-output="panic-output">Submit</button>
+              <button id="panic-btn" class="--panic-btn challenge-btn rounded-border primary-font semi-bold" data-output="panic-output" data-func="panic">Submit</button>
             </form>
             <code id="panic-output" class="--panic-output  challenge-output"> Just a little test code</code>
         </section>
@@ -32,7 +32,7 @@
             at the end of the sentence, if there is one. </h2>
             <form id="whisper-form" class="--whisper-form challenge-form">
               <input type="text" id="whisper-input" class="--whisper-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
-              <button id="whisper-btn" class="--whisper-btn challenge-btn rounded-border primary-font semi-bold" data-output="whisper-output">Submit</button>
+              <button id="whisper-btn" class="--whisper-btn challenge-btn rounded-border primary-font semi-bold" data-output="whisper-output" data-func="whisper">Submit</button>
             </form>
             <code id="whisper-output" class="--whisper-output challenge-output"> Just a little test code</code>
         </section>
@@ -42,9 +42,60 @@
             and returns a sentence in which every other letter is capitalized.</h2>
             <form id="caps-form" class="--caps-form challenge-form">
               <input type="text" id="caps-input" class="--caps-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
-              <button id="caps-btn" class="--caps-btn challenge-btn rounded-border primary-font semi-bold" data-output="whisper-output">Submit</button>
+              <button id="caps-btn" class="--caps-btn challenge-btn rounded-border primary-font semi-bold" data-output="caps-output" data-func="caps">Submit</button>
             </form>
             <code id="caps-output" class="--caps-output challenge-output"> Just a little test code</code>
+        </section>
+
+        <section id="title-function" class="--title rounded-border">
+          <h2>Write a function that will capitalize every word in a sentence. </h2>
+            <form id="title-form" class="--title-form challenge-form">
+              <input type="text" id="title-input" class="--title-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
+              <button id="title-btn" class="--title-btn challenge-btn rounded-border primary-font semi-bold" data-output="title-output" data-func="title">Submit</button>
+            </form>
+            <code id="title-output" class="--title-output challenge-output"> Just a little test code</code>
+        </section>
+
+        <section id="bonus-function" class="--bonus rounded-border">
+          <h2>Scrimba CEO Per Borgen wants you to write a program to grant special bonuses to all his employees based on their employee ID numbers! 
+
+            Scrimba has 100 employees and their employee ID numbers range from 1 - 100. If the employee's ID number is: 
+            
+            Divisible by <span class="bonus-input-one">INPUT 1</span> - Vacation! 
+            Divisible by <span class="bonus-input-two">INPUT 2</span> - $100,000 bonus! 
+            Divisible by both <span class="bonus-input-one">INPUT 1</span> and <span class="bonus-input-two">INPUT 2</span> - JACKPOT! 1 Million and a Yacht!
+            Not divisible by <span class="bonus-input-one">INPUT 1</span> or <span class="bonus-input-two">INPUT 2</span> - :(
+                
+            Write a program to loop through all the ID numbers and print their prize.  </h2>
+            
+            <form id="bonus-form" class="--bonus-form challenge-form">
+              <input type="number" id="bonus-inputOne" class="challenge-input rounded-border primary-font" min="1" max="9" placeholder="choose 0-9">
+              <input type="number" id="bonus-inputTwo" class="challenge-input rounded-border primary-font" min="1" max="9" placeholder="choose 0-9">
+              <button id="bonus-btn" class="--bonus-btn challenge-btn rounded-border primary-font semi-bold" data-output="bonus-output" data-func="bonus">Submit</button>
+            </form>
+            <code id="bonus-output" class="--bonus-output challenge-output"> Just a little test code</code>
+        </section>
+
+        <section id="emoji-function" class="--emoji rounded-border">
+          <h2>Popular services like Slack and Github allow for emoji shortscodes, meaning 
+            they will detect when a word in a sentence begins and ends with a colon (:)
+            and automatically replace that word with an emoji. 
+            
+            These shortcodes allow users to add an emoji to their messages by typing a 
+            code rather than searching for an emoji from a list. Use the list below to create your own sentence. </h2>
+            <ul id="emoji-list" class="--emoji-list bold">
+              <li id="emoji-smile">smile</li>
+              <li id="emoji-angry">angry</li>
+              <li id="emoji-party">party</li>
+              <li id="emoji-heart">heart</li>
+              <li id="emoji-cat">cat</li>
+              <li id="emoji-dog">dog</li>
+            </ul>
+            <form id="emoji-form" class="--emoji-form challenge-form">
+              <input type="text" id="emoji-input" class="--emoji-input challenge-input rounded-border primary-font" placeholder="I :heart: my :cat:">
+              <button id="emoji-btn" class="--emoji-btn challenge-btn rounded-border primary-font semi-bold" data-output="emoji-output" data-func="emoji">Submit</button>
+            </form>
+            <code id="emoji-output" class="--emoji-output challenge-output"> Just a little test code</code>
         </section>
       </main>
     </div>

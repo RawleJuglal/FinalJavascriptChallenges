@@ -155,3 +155,12 @@ section{
   padding:.5em .5em;
 }
 
+.--bonus-output{
+  white-space: pre-line;
+  max-height:6.25em;
+  overflow-y: scroll;
+}
+
+.--emoji-list{
+  margin:.5em 0;
+}
