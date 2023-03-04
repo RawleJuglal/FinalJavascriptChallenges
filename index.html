@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Javascript Challenges</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="header" class="--header">
+        <h1 id="header-title" class="--header-title bold">Final Javascript Challenges</h1>
+      </header>
+      <main id="main" class="--main">
+        <section id="panic-function" class="--panic rounded-border">
+          <h2>Write a PANIC! function. The function should take in a sentence and return the same
+            sentence in all caps with an exclamation point (!) at the end. Use JavaScript's
+            built in string methods.</h2>
+            <form id="panic-form" class="--panic-form challenge-form">
+              <input type="text" id="panic-input" class="--panic-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
+              <button id="panic-btn" class="--panic-btn challenge-btn rounded-border primary-font semi-bold" data-output="panic-output">Submit</button>
+            </form>
+            <code id="panic-output" class="--panic-output  challenge-output"> Just a little test code</code>
+        </section>
+
+        <section id="whisper-function" class="--whisper rounded-border">
+          <h2>Write a function `whisper` that takes in a sentence 
+            and returns a new sentence in all lowercase letters with
+            "shh..." at the beginning. 
+            
+            The function should also remove an exclamation point
+            at the end of the sentence, if there is one. </h2>
+            <form id="whisper-form" class="--whisper-form challenge-form">
+              <input type="text" id="whisper-input" class="--whisper-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
+              <button id="whisper-btn" class="--whisper-btn challenge-btn rounded-border primary-font semi-bold" data-output="whisper-output">Submit</button>
+            </form>
+            <code id="whisper-output" class="--whisper-output challenge-output"> Just a little test code</code>
+        </section>
+
+        <section id="caps-function" class="--caps rounded-border">
+          <h2> Write a function that takes in a string of letters
+            and returns a sentence in which every other letter is capitalized.</h2>
+            <form id="caps-form" class="--caps-form challenge-form">
+              <input type="text" id="caps-input" class="--caps-input challenge-input rounded-border primary-font" placeholder="Write a word or sentence">
+              <button id="caps-btn" class="--caps-btn challenge-btn rounded-border primary-font semi-bold" data-output="whisper-output">Submit</button>
+            </form>
+            <code id="caps-output" class="--caps-output challenge-output"> Just a little test code</code>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

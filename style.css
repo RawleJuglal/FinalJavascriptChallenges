@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+  font-size:16px;
+  --primary-font:'Montserrat', sans-serif;
+  --primary-color:#70ae6e;
+  --secondary-color:#483c46;
+  --tertiary-color:#beee62;
+  --whitesmoke:whitesmoke;
+  --altblack:#333;
+  --bold:700;
+  --semi-bold:600;
+  --light:300;
+}
+
+/* Utility Classes */
+.primary-font{
+  font-family:var(--primary-font);
+}
+
+.block-centered{
+  margin:0 auto;
+}
+
+.rounded-border{
+  border-radius:.9375em;
+}
+
+.bold{
+  font-weight:var(--bold);
+}
+
+.semi-bold{
+  font-weight: var(--semi-bold);
+}
+
+.light{
+  font-weight:var(--light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family:var(--primary-font);
+}
+
+.--header{
+  background-color:var(--primary-color);
+  color:var(--whitesmoke);
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  padding:2em 1em;
+}
+
+.--main{
+  background-color:var(--altblack);
+  padding:1em 1em;
+}
+
+section{
+  margin:1em auto;
+  max-width:600px;
+  background-color:var(--whitesmoke);
+  border:1px solid var(--primary-color);
+  padding:1em;
+}
+
+.challenge-form{
+  margin:1em 0;
+  display:flex;
+  flex-direction: column;
+}
+
+.challenge-input{
+  margin:.5em 0;
+  padding:1em 3em;
+}
+
+.challenge-input:focus-visible{
+  outline:#beee62 auto 2px;
+}
+
+.challenge-btn{
+  width:6.25em;
+  color:var(--whitesmoke);
+  background-color:var(--secondary-color);
+  padding:1em 0;
+}
+
+.challenge-btn:hover,
+.challenge-btn:focus{
+  background-color:#826d7f;
+}
+
+.challenge-output{
+  display:none;
+  background-color:#ded5dd;
+  padding:.5em .5em;
+}
+
